@@ -128,7 +128,7 @@ impl FLP {
                         size += (0x7F & byte) as u64;
 
                         // check if bit 7 is off
-                        if (1 << 7 & byte) == 0 {
+                        if (0x80 & byte) == 0 {
                             break;
                         }
                     }
